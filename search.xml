@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>谷歌搜索技巧</title>
+      <link href="/posts/b3e2.html"/>
+      <url>/posts/b3e2.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="谷歌搜索技巧"><a class="markdownIt-Anchor" href="#谷歌搜索技巧"></a> 谷歌搜索技巧</h2><ol><li>限定关键词：双引号””<ol><li>单个关键词：”<a href="http://coisini.io">coisini.io</a>”</li><li>多个关键词：”coisini” “Love and Peace”</li></ol></li><li>限定标题：intitle:<ol><li>单个关键词：intitle:coisini</li><li>多个关键词：intitle:”coisini””一见钟情”</li></ol></li><li>精准限定标题：allintitle:<ol><li>allintitle:”<a href="http://coisini.io">coisini.io</a>”</li><li>allintitle:”牛油果果” “知乎”</li></ol></li><li>限定内容：intext:<ol><li>标题+内容：intitle:coisini intext:三幕结构</li></ol></li><li>限定网址：inurl:<ol><li>奥运会 inurl: cctv</li><li>liwen inurl:coisini</li><li>母婴 inurl:baogao</li></ol></li><li>限定网站：site:<ol><li>限制顶级域名：site:.com</li><li>限制国内教育网：site:.edu.cn</li><li>例：cat site:zhihu.com</li><li>例：cat site:pexels.com</li></ol></li><li>限定图片大小：imagesize:<ol><li>cat imagesize:5760x3840</li></ol></li><li>限定文件格式：filetype:文件格式<ol><li>道德经 filetype:pdf</li><li>道德经 filetype:png (google 图片搜索模式）</li></ol></li><li>模糊搜索：数字模糊用两点… |文字模糊用星号*<ol><li>2002-2023 年之间：世界杯 2002…2023</li><li>模糊搜索中文：易**玺</li></ol></li><li>排除搜索 -<ol><li>排除微博的结果：易烊千玺 -weibo</li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> google </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>转型中的地方政府（第二版）</title>
       <link href="/posts/61fe.html"/>
       <url>/posts/61fe.html</url>
