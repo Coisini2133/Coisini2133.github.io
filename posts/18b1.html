@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Github搜索技巧  普通搜索 普通人在搜索时，通常采用的方法：选择 most match,most star 的类目排序，随后选择相应的语言和仓库进行筛选。  然而，这只是 google 搜索的冰山一角,下面几个方法可以让你掀开 github 搜索的神秘面纱。  高级搜索  查询大于或小于另一个值的值    查询语法 示例 描述     &gt; stars:&gt;1000 星标超过 10">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github搜索技巧">
+<meta property="og:url" content="https://coisini2133.github.io/posts/18b1.html">
+<meta property="og:site_name" content="Minddiy">
+<meta property="og:description" content="Github搜索技巧  普通搜索 普通人在搜索时，通常采用的方法：选择 most match,most star 的类目排序，随后选择相应的语言和仓库进行筛选。  然而，这只是 google 搜索的冰山一角,下面几个方法可以让你掀开 github 搜索的神秘面纱。  高级搜索  查询大于或小于另一个值的值    查询语法 示例 描述     &gt; stars:&gt;1000 星标超过 10">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/12/18/eUDotLz6mGu7hnW.png">
+<meta property="article:published_time" content="2024-03-19T11:58:23.587Z">
+<meta property="article:modified_time" content="2024-03-19T12:01:27.728Z">
+<meta property="article:author" content="Liwen">
+<meta property="article:tag" content="Github">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/12/18/eUDotLz6mGu7hnW.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="https://s2.loli.net/2024/03/10/ZLwMDWmugJqGTV6.jpg">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Github搜索技巧</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/posts/a0dc.html"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/posts/124f.html"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://coisini2133.github.io/posts/18b1.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://coisini2133.github.io/posts/18b1.html&text=Github搜索技巧"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://coisini2133.github.io/posts/18b1.html&is_video=false&description=Github搜索技巧"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Github搜索技巧&body=Check out this article: https://coisini2133.github.io/posts/18b1.html"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://coisini2133.github.io/posts/18b1.html&name=Github搜索技巧&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://coisini2133.github.io/posts/18b1.html&t=Github搜索技巧"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7"><span class="toc-number">1.</span> <span class="toc-text"> Github搜索技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E6%90%9C%E7%B4%A2"><span class="toc-number">1.1.</span> <span class="toc-text"> 普通搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2"><span class="toc-number">1.2.</span> <span class="toc-text"> 高级搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%A4%A7%E4%BA%8E%E6%88%96%E5%B0%8F%E4%BA%8E%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%80%BC%E7%9A%84%E5%80%BC"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 查询大于或小于另一个值的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%8C%83%E5%9B%B4%E4%B9%8B%E9%97%B4%E7%9A%84%E5%80%BC"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 查询范围之间的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%97%A5%E6%9C%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 查询日期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E9%99%A4%E7%89%B9%E5%AE%9A%E7%BB%93%E6%9E%9C"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 排除特定结果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E5%B8%A6%E6%9C%89%E7%A9%BA%E6%A0%BC%E7%9A%84%E6%9F%A5%E8%AF%A2%E4%BD%BF%E7%94%A8%E5%BC%95%E5%8F%B7"><span class="toc-number">1.2.5.</span> <span class="toc-text"> 对带有空格的查询使用引号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%94%A8%E6%88%B7%E5%90%8D%E7%9A%84%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.2.6.</span> <span class="toc-text"> 使用用户名的查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E9%AB%98%E7%BA%A7%E7%9A%84%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.</span> <span class="toc-text"> 更高级的搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%BB%93%E5%BA%93%E5%90%8D%E7%A7%B0-%E8%AF%B4%E6%98%8E%E6%88%96%E8%87%AA%E8%BF%B0%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 按仓库名称、说明或自述文件内容搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E7%94%A8%E6%88%B7%E6%88%96%E7%BB%84%E7%BB%87%E7%9A%84%E4%BB%93%E5%BA%93%E5%86%85%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 在用户或组织的仓库内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 按仓库大小搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%85%B3%E6%B3%A8%E8%80%85%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 按关注者数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%A4%8D%E5%88%BB%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 按复刻数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E6%98%9F%E5%8F%B7%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.6.</span> <span class="toc-text"> 按星号数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%BB%93%E5%BA%93%E5%88%9B%E5%BB%BA%E6%88%96%E4%B8%8A%E6%AC%A1%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.7.</span> <span class="toc-text"> 按仓库创建或上次更新时间搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E8%AF%AD%E8%A8%80%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.8.</span> <span class="toc-text"> 按语言搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%B8%BB%E9%A2%98%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.9.</span> <span class="toc-text"> 按主题搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%B8%BB%E9%A2%98%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.10.</span> <span class="toc-text"> 按主题数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%A7%86%E7%95%8C%E9%9D%A2%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.11.</span> <span class="toc-text"> 使用可视界面搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E8%AE%B8%E5%8F%AF%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.12.</span> <span class="toc-text"> 按许可搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%85%AC%E5%85%B1%E6%88%96%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.13.</span> <span class="toc-text"> 按公共或私有仓库搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E7%85%A7%E6%98%AF%E5%90%A6%E9%95%9C%E5%83%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.14.</span> <span class="toc-text"> 按照是否镜像搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E4%BB%93%E5%BA%93%E6%98%AF%E5%90%A6%E5%B7%B2%E5%AD%98%E6%A1%A3%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.15.</span> <span class="toc-text"> 基于仓库是否已存档搜索</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E5%85%B7%E6%9C%89-good-first-issue-%E6%88%96-help-wanted-%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AE%AE%E9%A2%98%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.4.</span> <span class="toc-text"> 基于具有 good first issue 或 help wanted 标签的议题数量搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text"> </span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Github搜索技巧
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Liwen</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-03-19T11:58:23.587Z" class="dt-published" itemprop="datePublished">2024-03-19</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Github/" rel="tag">Github</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="github搜索技巧"><a class="markdownIt-Anchor" href="#github搜索技巧"></a> Github搜索技巧</h1>
+<h2 id="普通搜索"><a class="markdownIt-Anchor" href="#普通搜索"></a> 普通搜索</h2>
+<p>普通人在搜索时，通常采用的方法：选择 most match,most star 的类目排序，随后选择相应的语言和仓库进行筛选。</p>
+<p><img src="https://s2.loli.net/2023/12/18/eUDotLz6mGu7hnW.png" alt="img" /></p>
+<p>然而，这只是 google 搜索的冰山一角,下面几个方法可以让你掀开 github 搜索的神秘面纱。</p>
+<h2 id="高级搜索"><a class="markdownIt-Anchor" href="#高级搜索"></a> 高级搜索</h2>
+<h3 id="查询大于或小于另一个值的值"><a class="markdownIt-Anchor" href="#查询大于或小于另一个值的值"></a> 查询大于或小于另一个值的值</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;</td>
+<td>stars:&gt;1000</td>
+<td>星标超过 1000 的仓库</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>topics:&gt;=5</td>
+<td>至少有 5 个主题的仓库</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>size:&lt;10000</td>
+<td>小于 10KB 的文件</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>stars:&lt;=50</td>
+<td>星标不超过 50 的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="查询范围之间的值"><a class="markdownIt-Anchor" href="#查询范围之间的值"></a> 查询范围之间的值</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n…n</td>
+<td>stars:10…50</td>
+<td>星标在 10 到 50 之间的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="查询日期"><a class="markdownIt-Anchor" href="#查询日期"></a> 查询日期</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>created:&gt;</td>
+<td>created:&gt;2016-04-29</td>
+<td>2016 年 4 月 29 日之后<strong>创建</strong>的议题</td>
+</tr>
+<tr>
+<td>pushed:YYYY-MM-DD…YYYY-MM-DD</td>
+<td>pushed:2016-04-30…2016-07-04</td>
+<td>2016 年 4 月末到 7 月之间<strong>推送</strong>的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="排除特定结果"><a class="markdownIt-Anchor" href="#排除特定结果"></a> 排除特定结果</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOT</td>
+<td>hello NOT world</td>
+<td>含有”hello”但不含有”world”的仓库</td>
+</tr>
+<tr>
+<td>-QUALIFIER</td>
+<td>stars:&gt;10 -language:javascript</td>
+<td>超过 10 个星标且非 JavaScript 的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="对带有空格的查询使用引号"><a class="markdownIt-Anchor" href="#对带有空格的查询使用引号"></a> 对带有空格的查询使用引号</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>使用引号</td>
+<td>label:”bug fix”</td>
+<td>具有”bug fix”标签的议题</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用用户名的查询"><a class="markdownIt-Anchor" href="#使用用户名的查询"></a> 使用用户名的查询</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QUALIFIER:USERNAME</td>
+<td>author:sumorio</td>
+<td>由用户 sumorio 创作的提交</td>
+</tr>
+</tbody>
+</table>
+<h2 id="更高级的搜索"><a class="markdownIt-Anchor" href="#更高级的搜索"></a> 更高级的搜索</h2>
+<h3 id="按仓库名称-说明或自述文件内容搜索"><a class="markdownIt-Anchor" href="#按仓库名称-说明或自述文件内容搜索"></a> 按仓库名称、说明或自述文件内容搜索</h3>
+<p>通过  <code>in</code> 限定符，您可以将搜索限制为仓库名称、仓库说明、自述文件内容或这些的任意组合。</p>
+<p>如果省略此限定符，则只搜索仓库名称和说明。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in:name</td>
+<td>vue in:name</td>
+<td>名称中含有”vue”的仓库</td>
+</tr>
+<tr>
+<td>in:description</td>
+<td>vue in:description</td>
+<td>说明中含有”vue”的仓库</td>
+</tr>
+<tr>
+<td>in:readme</td>
+<td>vue in:readme</td>
+<td>自述文件中提及”vue”的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="在用户或组织的仓库内搜索"><a class="markdownIt-Anchor" href="#在用户或组织的仓库内搜索"></a> 在用户或组织的仓库内搜索</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user:USERNAME</td>
+<td>user:sumorio forks:&gt;=100</td>
+<td>用户 sumorio 拥有超过 100 复刻的仓库</td>
+</tr>
+<tr>
+<td>org:ORGNAME</td>
+<td>org:github</td>
+<td>GitHub 组织的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按仓库大小搜索"><a class="markdownIt-Anchor" href="#按仓库大小搜索"></a> 按仓库大小搜索</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size:n…n</td>
+<td>size:1000…5000</td>
+<td>大小在 1000KB 到 5000KB 之间的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按关注者数量搜索"><a class="markdownIt-Anchor" href="#按关注者数量搜索"></a> 按关注者数量搜索</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>followers:n…n</td>
+<td>followers:10…50</td>
+<td>关注者数量在 10 到 50 之间的用户</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按复刻数量搜索"><a class="markdownIt-Anchor" href="#按复刻数量搜索"></a> 按复刻数量搜索</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forks:n…n</td>
+<td>forks:&gt;=100</td>
+<td>至少有 100 次复刻的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按星号数量搜索"><a class="markdownIt-Anchor" href="#按星号数量搜索"></a> 按星号数量搜索</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stars:n…n</td>
+<td>stars:&gt;=500</td>
+<td>至少有 500 个星标的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按仓库创建或上次更新时间搜索"><a class="markdownIt-Anchor" href="#按仓库创建或上次更新时间搜索"></a> 按仓库创建或上次更新时间搜索</h3>
+<p>基于创建时间或上次更新时间过滤仓库。</p>
+<ul>
+<li>对于仓库创建，使用  <code>created</code> 限定符；</li>
+<li>了解仓库上次更新的时间，使用  <code>pushed</code> 限定符。 <code>pushed</code> 限定符将返回仓库列表，按仓库中任意分支上最近进行的提交排序。<br />
+两者均采用日期作为参数。 日期格式  <code>YYYY-MM-DD</code>（年-月-日）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>created:YYYY-MM-DD…YYYY-MM-DD</td>
+<td>created:&gt;=2020-01-01</td>
+<td>2020 年 1 月 1 日之后创建的仓库</td>
+</tr>
+<tr>
+<td>pushed:YYYY-MM-DD…YYYY-MM-DD</td>
+<td>pushed:&lt;=2020-12-31</td>
+<td>2020 年 12 月 31 日之前更新的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按语言搜索"><a class="markdownIt-Anchor" href="#按语言搜索"></a> 按语言搜索</h3>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>language:LANGUAGE</td>
+<td>language:javascript</td>
+<td>使用 JavaScript 语言的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按主题搜索"><a class="markdownIt-Anchor" href="#按主题搜索"></a> 按主题搜索</h3>
+<p>您可以查找归类为特定  <a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/articles/classifying-your-repository-with-topics">主题</a> 的所有仓库。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topic:TOPIC</td>
+<td>topic:react</td>
+<td>涉及 React 的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按主题数量搜索"><a class="markdownIt-Anchor" href="#按主题数量搜索"></a> 按主题数量搜索</h3>
+<p>使用  <code>topics</code> 限定符以及  <a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/articles/understanding-the-search-syntax">大于、小于和范围限定符</a> 按应用于仓库的  <a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/articles/classifying-your-repository-with-topics">主题</a> 数量搜索仓库。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topics:n…n</td>
+<td>topics:&gt;=5</td>
+<td>至少有 5 个主题的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用可视界面搜索"><a class="markdownIt-Anchor" href="#使用可视界面搜索"></a> 使用可视界面搜索</h3>
+<ul>
+<li>使用  <a target="_blank" rel="noopener" href="https://github.com/search">search</a> page 或  <a target="_blank" rel="noopener" href="https://github.com/search/advanced">advanced search</a> page 进行搜索。</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/search/advanced">advanced search</a> page 提供用于构建搜索查询的可视界面。<br />
+按照条件因素进行过滤搜索，例如仓库具有的星标数或复刻数。 在填写高级搜索字段时，您的查询将在顶部搜索栏中自动构建。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>使用 GitHub 搜索界面</td>
+<td>-</td>
+<td>通过 GitHub 的可视界面进行搜索</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按许可搜索"><a class="markdownIt-Anchor" href="#按许可搜索"></a> 按许可搜索</h3>
+<p>按其<a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/articles/licensing-a-repository">许可</a>搜索仓库。 必须使用<a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/articles/licensing-a-repository/#searching-github-by-license-type">许可关键词</a>按特定许可或许可系列过滤仓库。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>license:LICENSE</td>
+<td>license:mit</td>
+<td>使用 MIT 许可的仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按公共或私有仓库搜索"><a class="markdownIt-Anchor" href="#按公共或私有仓库搜索"></a> 按公共或私有仓库搜索</h3>
+<p>您可以基于仓库是公共还是私有来过滤搜索。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is:public 或 is:private</td>
+<td>is:private</td>
+<td>私有仓库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按照是否镜像搜索"><a class="markdownIt-Anchor" href="#按照是否镜像搜索"></a> 按照是否镜像搜索</h3>
+<p>您可以根据仓库是否为镜像以及托管于其他位置托管来搜索它们。</p>
+<table>
+<thead>
+<tr>
+<th>限定符</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mirror:true 或 mirror:false</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type=">m</a><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type=">i</a><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type=">rror</a><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type=">:t</a><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type=">ru</a><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type=">e</a><a target="_blank" rel="noopener" href="https://github.com/search?utf8=%E2%9C%93&amp;q=mirror:true+GNOME&amp;type="> GNOME</a></td>
+<td>镜像且包含 “GNOME” 字样的仓库。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="基于仓库是否已存档搜索"><a class="markdownIt-Anchor" href="#基于仓库是否已存档搜索"></a> 基于仓库是否已存档搜索</h3>
+<p>基于仓库是否<a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/articles/about-archiving-repositories">已存档</a>来搜索仓库。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>archived:true 或 archived:false</td>
+<td>archived:false</td>
+<td>未存档的仓库</td>
+</tr>
+</tbody>
+</table>
+<h2 id="基于具有-good-first-issue-或-help-wanted-标签的议题数量搜索"><a class="markdownIt-Anchor" href="#基于具有-good-first-issue-或-help-wanted-标签的议题数量搜索"></a> 基于具有 good first issue 或 help wanted 标签的议题数量搜索</h2>
+<p>使用限定符  <code>help-wanted-issues:&gt;n</code> 和  <code>good-first-issues:&gt;n</code> 搜索具有最少数量标签为  <code>help-wanted</code> 或  <code>good-first-issue</code> 议题的仓库。</p>
+<table>
+<thead>
+<tr>
+<th>查询语法</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>good-first-issues:n…n</td>
+<td>good-first-issues:&gt;=1</td>
+<td>至少有 1 个 good first issue 的仓库</td>
+</tr>
+<tr>
+<td>help-wanted-issues:n…n</td>
+<td>help-wanted-issues:&gt;=1</td>
+<td>至少有 1 个 help wanted 的仓库</td>
+</tr>
+</tbody>
+</table>
+<h2 id=""><a class="markdownIt-Anchor" href="#"></a> </h2>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/search/">搜索</a></li>
+        
+          <li><a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7"><span class="toc-number">1.</span> <span class="toc-text"> Github搜索技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E6%90%9C%E7%B4%A2"><span class="toc-number">1.1.</span> <span class="toc-text"> 普通搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2"><span class="toc-number">1.2.</span> <span class="toc-text"> 高级搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%A4%A7%E4%BA%8E%E6%88%96%E5%B0%8F%E4%BA%8E%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%80%BC%E7%9A%84%E5%80%BC"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 查询大于或小于另一个值的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%8C%83%E5%9B%B4%E4%B9%8B%E9%97%B4%E7%9A%84%E5%80%BC"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 查询范围之间的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%97%A5%E6%9C%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 查询日期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E9%99%A4%E7%89%B9%E5%AE%9A%E7%BB%93%E6%9E%9C"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 排除特定结果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E5%B8%A6%E6%9C%89%E7%A9%BA%E6%A0%BC%E7%9A%84%E6%9F%A5%E8%AF%A2%E4%BD%BF%E7%94%A8%E5%BC%95%E5%8F%B7"><span class="toc-number">1.2.5.</span> <span class="toc-text"> 对带有空格的查询使用引号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%94%A8%E6%88%B7%E5%90%8D%E7%9A%84%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.2.6.</span> <span class="toc-text"> 使用用户名的查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E9%AB%98%E7%BA%A7%E7%9A%84%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.</span> <span class="toc-text"> 更高级的搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%BB%93%E5%BA%93%E5%90%8D%E7%A7%B0-%E8%AF%B4%E6%98%8E%E6%88%96%E8%87%AA%E8%BF%B0%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 按仓库名称、说明或自述文件内容搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E7%94%A8%E6%88%B7%E6%88%96%E7%BB%84%E7%BB%87%E7%9A%84%E4%BB%93%E5%BA%93%E5%86%85%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 在用户或组织的仓库内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 按仓库大小搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%85%B3%E6%B3%A8%E8%80%85%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 按关注者数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%A4%8D%E5%88%BB%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 按复刻数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E6%98%9F%E5%8F%B7%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.6.</span> <span class="toc-text"> 按星号数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%BB%93%E5%BA%93%E5%88%9B%E5%BB%BA%E6%88%96%E4%B8%8A%E6%AC%A1%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.7.</span> <span class="toc-text"> 按仓库创建或上次更新时间搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E8%AF%AD%E8%A8%80%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.8.</span> <span class="toc-text"> 按语言搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%B8%BB%E9%A2%98%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.9.</span> <span class="toc-text"> 按主题搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E4%B8%BB%E9%A2%98%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.10.</span> <span class="toc-text"> 按主题数量搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%8F%AF%E8%A7%86%E7%95%8C%E9%9D%A2%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.11.</span> <span class="toc-text"> 使用可视界面搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E8%AE%B8%E5%8F%AF%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.12.</span> <span class="toc-text"> 按许可搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%85%AC%E5%85%B1%E6%88%96%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.13.</span> <span class="toc-text"> 按公共或私有仓库搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E7%85%A7%E6%98%AF%E5%90%A6%E9%95%9C%E5%83%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.14.</span> <span class="toc-text"> 按照是否镜像搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E4%BB%93%E5%BA%93%E6%98%AF%E5%90%A6%E5%B7%B2%E5%AD%98%E6%A1%A3%E6%90%9C%E7%B4%A2"><span class="toc-number">1.3.15.</span> <span class="toc-text"> 基于仓库是否已存档搜索</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E5%85%B7%E6%9C%89-good-first-issue-%E6%88%96-help-wanted-%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AE%AE%E9%A2%98%E6%95%B0%E9%87%8F%E6%90%9C%E7%B4%A2"><span class="toc-number">1.4.</span> <span class="toc-text"> 基于具有 good first issue 或 help wanted 标签的议题数量搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.5.</span> <span class="toc-text"> </span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://coisini2133.github.io/posts/18b1.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://coisini2133.github.io/posts/18b1.html&text=Github搜索技巧"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://coisini2133.github.io/posts/18b1.html&is_video=false&description=Github搜索技巧"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Github搜索技巧&body=Check out this article: https://coisini2133.github.io/posts/18b1.html"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://coisini2133.github.io/posts/18b1.html&title=Github搜索技巧"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://coisini2133.github.io/posts/18b1.html&name=Github搜索技巧&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://coisini2133.github.io/posts/18b1.html&t=Github搜索技巧"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024
+    Liwen
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     --><!--
+       --><li><a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
