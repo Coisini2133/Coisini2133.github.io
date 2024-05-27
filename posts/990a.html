@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="在 conda 中管理 Python 版本的完整指南 [后端](javascript:void(0)) 2024-03-01 14:20:28 Python是一种流行的编程语言，它有许多不同的版本，每个版本都有自己的特性和优势。如果您使用conda来管理您的Python环境和包，您可能想知道如何在conda中更改Python版本，以便使用不同的功能或兼容不同的库。 在本文中，我们将介绍如何在co">
+    <meta name="description" content="在 conda 中管理 Python 版本的完整指南 Python是一种流行的编程语言，它有许多不同的版本，每个版本都有自己的特性和优势。如果您使用conda来管理您的Python环境和包，您可能想知道如何在conda中更改Python版本，以便使用不同的功能或兼容不同的库。 在本文中，我们将介绍如何在conda中查看、安装、切换和更新Python版本的方法，以及如何创建和删除不同Python版">
 <meta property="og:type" content="article">
 <meta property="og:title" content="conda管理python">
 <meta property="og:url" content="https://coisini2133.github.io/posts/990a.html">
 <meta property="og:site_name" content="Minddiy">
-<meta property="og:description" content="在 conda 中管理 Python 版本的完整指南 [后端](javascript:void(0)) 2024-03-01 14:20:28 Python是一种流行的编程语言，它有许多不同的版本，每个版本都有自己的特性和优势。如果您使用conda来管理您的Python环境和包，您可能想知道如何在conda中更改Python版本，以便使用不同的功能或兼容不同的库。 在本文中，我们将介绍如何在co">
+<meta property="og:description" content="在 conda 中管理 Python 版本的完整指南 Python是一种流行的编程语言，它有许多不同的版本，每个版本都有自己的特性和优势。如果您使用conda来管理您的Python环境和包，您可能想知道如何在conda中更改Python版本，以便使用不同的功能或兼容不同的库。 在本文中，我们将介绍如何在conda中查看、安装、切换和更新Python版本的方法，以及如何创建和删除不同Python版">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-26T16:34:14.000Z">
-<meta property="article:modified_time" content="2024-05-27T06:21:32.530Z">
+<meta property="article:modified_time" content="2024-05-27T06:22:40.793Z">
 <meta property="article:author" content="Liwen">
 <meta property="article:tag" content="conda">
 <meta name="twitter:card" content="summary">
@@ -162,8 +162,6 @@
 
   <div class="content e-content" itemprop="articleBody">
     <h1 id="在-conda-中管理-python-版本的完整指南"><a class="markdownIt-Anchor" href="#在-conda-中管理-python-版本的完整指南"></a> 在 conda 中管理 Python 版本的完整指南</h1>
-<p>[后端](javascript:void(0))</p>
-<p>2024-03-01 14:20:28</p>
 <p>Python是一种流行的编程语言，它有许多不同的版本，每个版本都有自己的特性和优势。如果您使用conda来管理您的Python环境和包，您可能想知道如何在conda中更改Python版本，以便使用不同的功能或兼容不同的库。</p>
 <p>在本文中，我们将介绍如何在conda中查看、安装、切换和更新Python版本的方法，以及如何创建和删除不同Python版本的环境。我们还将回答一些常见的问题，帮助您更好地理解conda和Python之间的关系。</p>
 <h2 id="查看可用的python版本"><a class="markdownIt-Anchor" href="#查看可用的python版本"></a> 查看可用的Python版本</h2>
@@ -177,9 +175,9 @@
 <p>要创建一个新的环境，并安装一个特定版本的Python，您可以在终端窗口或Anaconda提示符中运行以下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n ENV_NAME python=VERSION</span><br></pre></td></tr></table></figure>
 <p>其中<code>ENV_NAME</code>是您要创建的环境的名称，<code>VERSION</code>是您要安装的Python版本。例如，要创建一个名为<code>py39</code>的环境，并安装Python <strong>3</strong> .9，您可以运行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py39 python=3 .9</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py39 python=3.9</span><br></pre></td></tr></table></figure>
 <p>这将在<code>/envs/</code>目录下创建一个名为<code>py39</code>的环境，并在其中安装Python <strong>3</strong> .9和一些基本的包。如果您想在创建环境时安装更多的包，您可以在命令中添加它们，例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py39 python=3 .9 numpy pandas matplotlib</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py39 python=3.9 numpy pandas matplotlib</span><br></pre></td></tr></table></figure>
 <p>这将在<code>py39</code>环境中安装Python <strong>3</strong> .9和numpy、pandas、matplotlib等包。</p>
 <h2 id="切换不同版本的python"><a class="markdownIt-Anchor" href="#切换不同版本的python"></a> 切换不同版本的Python</h2>
 <p>要切换到有不同版本Python的环境，您需要激活该环境。激活环境意味着将其添加到系统路径中，以便您可以使用该环境中安装的程序和包。</p>
@@ -201,7 +199,7 @@
 <p>如果您在一个有Python <strong>3</strong> .4 .2 版本的环境中，则以下命令将更新Python到 <strong>3</strong> .4 分支中最新版：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update python</span><br></pre></td></tr></table></figure>
 <p>以下命令通过安装该版本来升级Python到另一个分支—— <strong>3</strong> .8 。这并不推荐做法，而是最好创建一个新环境。解析器必须非常努力地确定究竟应该升级哪些包。但是这是可能做到，并且命令是：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install python=3 .8</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install python=3.8</span><br></pre></td></tr></table></figure>
 <h2 id="创建和删除不同python版本的环境"><a class="markdownIt-Anchor" href="#创建和删除不同python版本的环境"></a> 创建和删除不同Python版本的环境</h2>
 <p>如果您想尝试不同版本的Python而不影响现有环境或系统级别（system-level）或基础级别（base-level） 的 Python ，则最好创建一个新环境并在其中安装所需版本。</p>
 <p>我们已经介绍了如何使用 <code>conda create -n ENV_NAME python=VERSION</code> 命令来创建并安装特定 Python 版本到新建立之环境。</p>
@@ -250,7 +248,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update python</span><br></pre></td></tr></table></figure>
 <p>这将更新当前激活的环境中安装的Python到最新可用版本。例如，如果您当前使用Python <strong>3</strong> .9 .8 ，则该命令将更新Python到 <strong>3</strong> .9 .9 （如果可用）。</p>
 <p>如果您想升级到另一个分支（branch）上最新可用版本，例如从 <strong>3</strong> .9 到 <strong>3</strong> .10 ，则可以使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install python=3 .10</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install python=3.10</span><br></pre></td></tr></table></figure>
 <p>这将安装Python <strong>3</strong> .10 到当前激活的环境中，并尝试解决任何依赖性问题。请注意，这种方法并不推荐，因为它可能导致一些包不再可用或不再兼容。建议您创建一个新的环境，并在其中安装所需版本。</p>
 <h2 id="结论"><a class="markdownIt-Anchor" href="#结论"></a> 结论</h2>
 <p>在本文中，我们介绍了如何在 conda 中查看、安装、切换和更新Python版本的方法，以及如何创建和删除不同Python版本的环境。我们还回答了一些常见问题，帮助您更好地理解 conda 和Python之间的关系。</p>
